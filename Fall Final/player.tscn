@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://e58llqhkyms1"]
+[gd_scene load_steps=5 format=3 uid="uid://e58llqhkyms1"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_mm1fx"]
 [ext_resource type="Texture2D" uid="uid://vs551jdj25r0" path="res://assets/player.png" id="2_aqtw0"]
+[ext_resource type="AudioStream" uid="uid://25h8317w24nw" path="res://assets/enemy_hit.mp3" id="3_yjwqi"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0irrx"]
 radius = 143.0
@@ -18,3 +19,6 @@ shape = SubResource("CapsuleShape2D_0irrx")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1, 2)
 texture = ExtResource("2_aqtw0")
+
+[node name="EnemyHit" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_yjwqi")
