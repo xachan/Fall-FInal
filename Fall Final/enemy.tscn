@@ -2,9 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_4gtuo"]
 
-[node name="enemy" type="Node2D"]
-
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Enemy" type="Sprite2D"]
+position = Vector2(-63, 89)
 texture = ExtResource("1_4gtuo")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="."]
