@@ -1,9 +1,10 @@
 extends Area2D
 
 @onready var bgmusic = $"../Bgmusic"
-@onready var enemy_hit = $EnemyHit
+@onready var enemyhit = $enemyhit
 
-@export var speed = 100
+
+@export var speed = 300
 
 
 
@@ -36,6 +37,6 @@ func _process(delta):
 
 
 func _on_body_entered(body):
-	pass # Replace with function body.
-	enemy_hit.play()
+	hide()
+	enemyhit.play()
 	bgmusic.stop()
